@@ -4,7 +4,7 @@
 
 export const environment = {
   apphost:'http://localhost:4200/',
-  creditCardEndPoint:'assets/citi-featured-card-list.json',
+  creditCardEndPoint:'api/v1/citi-featured-card-list.json',
   production: false
 };
 

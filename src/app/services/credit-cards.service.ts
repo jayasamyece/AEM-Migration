@@ -11,7 +11,7 @@ export class CreditCardsService {
   constructor(private _http: HttpClient) { }
 
   getCreditCards(): Observable<any>{
-    return this._http.get(environment.apphost+ environment.creditCardEndPoint).pipe(
+    return this._http.get(environment.creditCardEndPoint).pipe(
       tap(t=>{console.log('API Data',t )})
     );
   }

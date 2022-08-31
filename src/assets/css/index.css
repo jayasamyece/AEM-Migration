@@ -1,6 +1,9 @@
 @import "./reset.css";
 @import "./util.css";
 
+.container {
+    font-size: 14px;
+}
 /* Promo Block */
 .promoBlock {
     background: #333;
@@ -15,7 +18,7 @@
 /* Promo Block Ends */
 
 .text-white{
-    color: #FFF;
+    color: #fff;
 }
 /* Main Header */
 .mainHeader {
@@ -40,6 +43,11 @@
 /* Main Header Ends */
 
 /* Nav Header */
+.menuButton {
+    color: #056dae;
+    display: none;
+    font-weight: bold;
+}
 .navHeader {
     background: rgba(255,255,255,.95);
     box-shadow: 0 1px 5px #00000020, 0 1px 1px #00000020;
@@ -54,14 +62,33 @@
 .navLink {
     color: #333;
     height: 100%;
-    padding: 0 20px;
+    padding: 16px 8px 18px;
+    margin: 0 16px;
     justify-content: center;
     align-items: center;
     text-decoration: none;
+    position: relative;
+    display: block;
 }
 
-.navHeaderContainer {
-    margin-left: 16px;
+.navLink:first-child {
+    margin-left: 0;
+}
+
+.navLink::before {
+    content: "";
+    background-color: #056dae;
+    position: absolute;
+    height: 3px;
+    width: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    transition: width .2s ease;
+}
+
+.navLink:hover::before {
+    width: 100%;
 }
 /* Nav Header Ends */
 
@@ -71,9 +98,9 @@
 }
 
 .mainTitle {
-    font-size: 42px;
-    line-height: 50px;
-    margin-bottom: 20px;;
+    font-size: 36px;
+    line-height: 42px;
+    margin-bottom: 16px;;
 }
 
 .infoSection {
@@ -153,8 +180,9 @@
 /* Browse Card Categories Ends */
 
 /* Card Listing Section */
-.cardListingSection {
+.cardListingItem {
     background: #EEE;
+    font-size: 14px;
     padding: 24px;
     margin-top: 20px;
 }
@@ -229,10 +257,83 @@
 .cardInfoText {
     margin-top: 8px;
 }
+.cardInfoDesktop {
+    margin-top: 20px;
+}
 .cardInfoTablet {
     display: none;
 }
 /* Card Listing Section Ends */
+
+/* Footer */
+footer {
+    color: #adadad;
+    background: #282828;
+    min-height: 1.4em;
+    position: initial;
+    width: 100%;
+    z-index: 3;
+}
+
+.footerLink {
+    color: #e0e0e0;
+    display: block;
+    font-size: 12px;
+    line-height: 16px;
+    margin-bottom: 16px;
+}
+
+.footerListingBlock {
+    padding: 24px;
+    max-width: 980px;
+    margin: 0 auto;
+}
+.footerList:nth-child(odd) {
+    width: 30%;
+}
+.footerList:nth-child(even) {
+    width: 20%;
+}
+
+.footerTitle {
+    font-weight: bold;
+}
+
+.adChoices {
+    background-image: url(../images/adchoice-ccc.png);
+    background-repeat: no-repeat;
+    background-size: 15px 16px;
+    background-position: 61px 1px;
+    display: block;
+}
+
+.sprite {
+    background-repeat: no-repeat;
+    background-image: url(../images/sprites.png);
+    background-size: 199px;
+    height: 19px;
+    width: 32px;
+    display: inline-block;
+    padding-left: 36px;
+}
+
+.facebook {
+    background-position: -61px -111px
+}
+.twitter {
+    background-position: -65px -71px;
+}
+.youtube {
+    background-position: -64px -91px;
+}
+.copyRightBlock {
+    border-top: 1px solid #e0e0e0;
+    font-size: 14px;
+    padding: 24px;
+    margin: 0 auto;
+    max-width: 980px;
+}
+/* Footer Ends */
 
 /* Responsive */
 @media screen and (min-width: 767px) and (max-width: 1024px) {
@@ -258,13 +359,62 @@
 
     .cardInfoTablet {
         margin-top: 24px;
+        display: block;
+    }
+    .creditCardImage {
+        width: 90%;
     }
 }
 
 @media screen and (max-width: 767px) {
-    .navHeader {
+    .menuButton {
+        display: flex;
+        padding: 24px 0;
+        position: relative;
+    }
+    .arrowImageBlock {
+        margin-left: 4px;
+    }
+
+    .menuButton:hover:before {
+        background: rgba(0,0,0,0);
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .menuButton:hover .arrowImageBlock {
+        transform: rotate(180deg);
+    }
+
+    .navHeaderContainer {
         display: none;
     }
+
+    .menuButtonBlock:hover .navHeaderContainer {
+        background: #FFF;
+        box-shadow: 0 0px 2px 1px rgb(0,0,0,0.25);
+        display: block;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+    }
+    .navLink {
+        margin: 0;
+        padding: 16px 24px;
+        border-bottom: 1px solid #00000029;
+    }
+    .signOnBtn {
+        box-shadow: -4px 0 10px #0000001a;
+        padding: 24px 0 24px 16px;
+    }
+    
     .featureCardInnerTitle {
         font-size: 18px;
         line-height: 24px;
@@ -285,10 +435,6 @@
         display: none;
     }
 
-    .cardInfoTablet {
-        margin-top: 24px;
-    }
-
     .featureCreditCardListBlock, .cardListingItem {
         width: 100%;
         flex-wrap: wrap;
@@ -304,6 +450,37 @@
     .cardInnerImageBlock,
     .cardContentBlock {
         width: 100%;
+    }
+
+    .cardInfoBlock {
+        flex-wrap: wrap;
+    }
+
+    .cardContentBlock {
+        margin-top: 24px;
+    }
+
+    .cardInfoDesktop {
+        display: block;
+    }
+
+    .footerListingBlock {
+        flex-wrap: wrap;
+        padding-bottom: 0;
+    }
+    
+    .socilBlock {
+        align-items: flex-start;
+    }
+
+    .footerListingBlock .footerList:nth-child(odd) {
+        width: 60%;
+        padding-right: 24px;
+        padding-bottom: 24px;
+    }
+    .footerListingBlock .footerList:nth-child(even) {
+        width: 40%;
+        padding-right: 24px;
     }
 }
 /* Responsive Ends */

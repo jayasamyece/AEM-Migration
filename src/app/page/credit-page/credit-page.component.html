@@ -1,103 +1,317 @@
-<app-page-header></app-page-header>
-<!-- Main Container -->
-<article class="mainContainer">
-    <!-- Info Section -->
-    <section class="infoSection containerWidth">
-        <h1 class="mainTitle">
-            View and Compare All Credit Cards
-        </h1>
-        <div class="infoContent">
-            Explore Citi's credit card offers, featuring exclusive perks and benefits to reward your spending. From cash back and travel cards, to low introductory APR on balance transfers, Citi has the right credit card for you. Browse our full range of credit card categories, or use Citi's card comparison tool to discover features and help you choose the best credit card to fit your needs. Simply check the box next to your 3 favorite cards to compare the various benefits, rewards, fees and offers. When you're ready, select the credit card you'd like to learn more about and apply online.
-        </div>
-    </section>
-    <!-- Info Secion Ends -->
+
+        <!-- Header -->
+        <header class="headerBlock">
+            <!-- Promo Block -->
+            <div class="promoBlock">
+                <ul class="promoBlockListContainer flex containerWidth contentEnd">
+                    <li class="promoBlockListContent underline bold"><a class="promoBlockLink" href="#">ATM / Branch</a></li>
+                    <li class="promoBlockListContent underline bold"><a class="promoBlockLink" href="#">Open an Account</a></li>
+                    <li class="promoBlockListContent underline bold"><a class="promoBlockLink" href="#">Espanol</a></li>
+                </ul>
+            </div>
+            <!-- Promo Block Ends -->
+            <!-- Main Header -->
+            <div class="mainHeader">
+                <div class="flex containerWidth spaceBetween alignCenter">
+                    <div class="logoBlock">
+                        <a href="#"><img src="./assets/images/citilogo.png" alt="Citi" title="Citi"></a>
+                    </div>
+                    <div class="searchBlock">
+                        <button class="searchBtn underline bold">
+                            Search<img class="searchImg" src="./assets/images/search-white.png" alt="Search" title="Search">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Main Header Ends -->
+            <!-- Nav Header -->
+            <div class="navHeader flex spaceBetween">
+                <div class="flex containerWidth spaceBetween alignCenter">
+                    <div class="menuButtonBlock">
+                        <button class="menuButton"><span>Menu</span><span class="arrowImageBlock"><img src="./assets/images/arrow-dropdown-down.svg" alt="Menu"></span></button>
+                        <ul class="navHeaderContainer flex">
+                            <li class="navHeaderContent"><a class="navLink" href="#">Credit Cards</a></li>
+                            <li class="navHeaderContent"><a class="navLink" href="#">Banking</a></li>
+                            <li class="navHeaderContent"><a class="navLink" href="#">Lending</a></li>
+                            <li class="navHeaderContent"><a class="navLink" href="#">Investing</a></li>
+                            <li class="navHeaderContent"><a class="navLink" href="#">Citigold<sup>&reg;</sup></a></li>
+                        </ul>
+                    </div>
+                    <button class="signOnBtn bold">Sign On</button>
+                </div>
+            </div>
+            <!-- Nav Header Ends -->
+        </header>
+        <!-- Header Ends -->
+        <!-- Main Container -->
+        <article class="mainContainer">
+            <!-- Info Section -->
+            <section class="infoSection containerWidth">
+                <h1 class="mainTitle">
+                    View and Compare All Credit Cards
+                </h1>
+                <div class="infoContent">
+                    Explore Citi's credit card offers, featuring exclusive perks and benefits to reward your spending. From cash back and travel cards, to low introductory APR on balance transfers, Citi has the right credit card for you. Browse our full range of credit card categories, or use Citi's card comparison tool to discover features and help you choose the best credit card to fit your needs. Simply check the box next to your 3 favorite cards to compare the various benefits, rewards, fees and offers. When you're ready, select the credit card you'd like to learn more about and apply online.
+                </div>
+            </section>
+            <!-- Info Secion Ends -->
     <!-- Featture Credit Card Section -->
     <app-feature-credit-card-section></app-feature-credit-card-section>
     <!-- Feature Credit Card Section -->
-    <!-- Browse Card Categories Section -->
-    <section class="browseCardCategories textCenter">
-        <div class="containerWidth">
-            <h2 class="browseCardCategoriesTitle">Browse Our Card Categories</h2>
-            <div class="tabListBlock">
-                <button class="tabListItem secondary selected">All Credit Cards</button>
-                <button class="tabListItem secondary">Rewards</button>
-                <button class="tabListItem secondary">Travel</button>
-                <button class="tabListItem secondary">0% Intro APR</button>
-                <button class="tabListItem secondary">Cash Back</button>
-                <button class="tabListItem secondary">Balance Transfer</button>
-                <button class="tabListItem secondary">Business</button>
-            </div>
-        </div>
-    </section>
-    <!-- Browser Card Categories Section Ends -->
-    <!-- All Cards Listing Section -->
-    <Section class="cardListingSection containerWidth">
-        <!-- Card Listing Block -->
-        <div class="cardListingItem flex">
-            <div class="cardImageBlock">
-                <div class="cardInnerImageBlock">
-                    <div class="cardInfoLabel">
-                        Earn Cash Back
-                    </div>
-                    <img src="./assets/images/citi-custom-cash_247x156.png" alt="Custom Cash" title="Custom Cash">
-                    <button class="link">Pricing &amp; information</button>
-                </div>
-                <div class="cardInfoActionBlock cardInfoTablet">
-                    <div class="cardInfoActionCtaBlock">
-                        <button class="btn primary">Learn More &amp; Apply</button>
-                        <!-- Button and Link Block Ends -->
-                        <!-- Compare Block -->
-                        <div class="checkbox compareCheckBox">
-                            <input type="checkbox" id="listcard1">
-                            <label for="listcard1">Compare</label>
-                        </div>
-                        <!-- Compare Block Ends -->
+            <!-- Browse Card Categories Section -->
+            <section class="browseCardCategories textCenter">
+                <div class="containerWidth">
+                    <h2 class="browseCardCategoriesTitle">Browse Our Card Categories</h2>
+                    <div class="tabListBlock">
+                        <button class="tabListItem secondary selected">All Credit Cards</button>
+                        <button class="tabListItem secondary">Rewards</button>
+                        <button class="tabListItem secondary">Travel</button>
+                        <button class="tabListItem secondary">0% Intro APR</button>
+                        <button class="tabListItem secondary">Cash Back</button>
+                        <button class="tabListItem secondary">Balance Transfer</button>
+                        <button class="tabListItem secondary">Business</button>
                     </div>
                 </div>
-            </div>
-            <div class="cardContentBlock">
-                <div class="cardDescBlock">
-                    <h3 class="cardDescBlockTitle">Citi Custom Cash<sup>SM</sup> Card</h3>
-                    <p class="cardDescBlockDesc">Earn and redeem rewards with a card that adapts to fit your life. With the Citi Custom Cash<sup>SM</sup> Card, earn extra cash back in the eligible category you spend the most in each billing cycle. Plus, you can enjoy a low intro APR on new purchases and balance transfers for the first <span>15</span> months as a new cardholder, all with no annual fee.<sup>1</sup></p>
-                </div>
-                <div class="cardInfoBlock flex">
-                    <div class="cardInfoContent">
-                        <div class="cardInfoMainContent">
-                            <strong>Earn&nbsp;$<span>200</span> cash back</strong> after you spend&nbsp;<strong>$<span>1,500</span></strong>&nbsp;on purchases in the&nbsp;<strong>first&nbsp;<span>6</span>&nbsp;months of account opening</strong>. Plus enjoy our low intro APR for <span>15</span> months.<sup>1</sup>
-                        </div>
-                        <h4 class="bold">
-                            Purchase and Balance Transfer 
-                        </h4>
-                        <div class="cardInfoText">
-                            0% Intro APR on purchases and balance transfers for 15 months; after that the variable APR will be 16.24% - 26.24%, based on your creditworthiness.
-                        </div>
-                        <div class="cardInfoText">
-                            Balance transfer fee of either $5 or 5% of the amount of each transfer, whichever is greater
-                        </div>
-                        <h4 class="cardInfoTitle bold">
-                            Annual Fee:
-                        </h4>
-                        <div class="cardInfoText">
-                            No annual fee
-                        </div>
-                    </div>
-                    <div class="cardInfoActionBlock cardInfoDesktop">
-                        <div class="cardInfoActionCtaBlock">
-                            <button class="btn primary">Learn More &amp; Apply</button>
-                            <!-- Button and Link Block Ends -->
-                            <!-- Compare Block -->
-                            <div class="checkbox compareCheckBox">
-                                <input type="checkbox" id="listcard1">
-                                <label for="listcard1">Compare</label>
+            </section>
+            <!-- Browser Card Categories Section Ends -->
+            <!-- All Cards Listing Section -->
+            <Section class="cardListingSection containerWidth">
+                <!-- Card Listing Block -->
+                <div class="cardListingItem flex">
+                    <div class="cardImageBlock">
+                        <div class="cardInnerImageBlock">
+                            <div class="cardInfoLabel">
+                                Earn Cash Back
                             </div>
-                            <!-- Compare Block Ends -->
+                            <img src="./assets/images/citi-custom-cash_247x156.png" alt="Custom Cash" title="Custom Cash">
+                            <button class="link">Pricing &amp; information</button>
+                        </div>
+                        <div class="cardInfoActionBlock cardInfoTablet">
+                            <div class="cardInfoActionCtaBlock">
+                                <button class="btn primary">Learn More &amp; Apply</button>
+                                <!-- Button and Link Block Ends -->
+                                <!-- Compare Block -->
+                                <div class="checkbox compareCheckBox">
+                                    <input type="checkbox" id="listcard1">
+                                    <label for="listcard1">Compare</label>
+                                </div>
+                                <!-- Compare Block Ends -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cardContentBlock">
+                        <div class="cardDescBlock">
+                            <h3 class="cardDescBlockTitle">Citi Custom Cash<sup>SM</sup> Card</h3>
+                            <p class="cardDescBlockDesc">Earn and redeem rewards with a card that adapts to fit your life. With the Citi Custom Cash<sup>SM</sup> Card, earn extra cash back in the eligible category you spend the most in each billing cycle. Plus, you can enjoy a low intro APR on new purchases and balance transfers for the first <span>15</span> months as a new cardholder, all with no annual fee.<sup>1</sup></p>
+                        </div>
+                        <div class="cardInfoBlock flex">
+                            <div class="cardInfoContent">
+                                <div class="cardInfoMainContent">
+                                    <strong>Earn&nbsp;$<span>200</span> cash back</strong> after you spend&nbsp;<strong>$<span>1,500</span></strong>&nbsp;on purchases in the&nbsp;<strong>first&nbsp;<span>6</span>&nbsp;months of account opening</strong>. Plus enjoy our low intro APR for <span>15</span> months.<sup>1</sup>
+                                </div>
+                                <h4 class="bold">
+                                    Purchase and Balance Transfer 
+                                </h4>
+                                <div class="cardInfoText">
+                                    0% Intro APR on purchases and balance transfers for 15 months; after that the variable APR will be 16.24% - 26.24%, based on your creditworthiness.
+                                </div>
+                                <div class="cardInfoText">
+                                    Balance transfer fee of either $5 or 5% of the amount of each transfer, whichever is greater
+                                </div>
+                                <h4 class="cardInfoTitle bold">
+                                    Annual Fee:
+                                </h4>
+                                <div class="cardInfoText">
+                                    No annual fee
+                                </div>
+                            </div>
+                            <div class="cardInfoActionBlock cardInfoDesktop">
+                                <div class="cardInfoActionCtaBlock">
+                                    <button class="btn primary">Learn More &amp; Apply</button>
+                                    <!-- Button and Link Block Ends -->
+                                    <!-- Compare Block -->
+                                    <div class="checkbox compareCheckBox">
+                                        <input type="checkbox" id="listcard1">
+                                        <label for="listcard1">Compare</label>
+                                    </div>
+                                    <!-- Compare Block Ends -->
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <!-- Card Listing Block Ends -->
+                <!-- Card Listing Block -->
+                <div class="cardListingItem flex">
+                    <div class="cardImageBlock">
+                        <div class="cardInnerImageBlock">
+                            <div class="cardInfoLabel">
+                                0% APR
+                            </div>
+                            <img src="./assets/images/citi-secured-card_222x140.png" alt="Secure Card" title="Secure Card">
+                            <button class="link">Pricing &amp; information</button>
+                        </div>
+                        <div class="cardInfoActionBlock cardInfoTablet">
+                            <div class="cardInfoActionCtaBlock">
+                                <button class="btn primary">Learn More &amp; Apply</button>
+                                <!-- Button and Link Block Ends -->
+                                <!-- Compare Block -->
+                                <div class="checkbox compareCheckBox">
+                                    <input type="checkbox" id="listcard1">
+                                    <label for="listcard1">Compare</label>
+                                </div>
+                                <!-- Compare Block Ends -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cardContentBlock">
+                        <div class="cardDescBlock">
+                            <h3 class="cardDescBlockTitle">Citi Secure<sup>&reg;</sup> Credit Card</h3>
+                            <p class="cardDescBlockDesc">The Citi<sup>&reg;</sup> Secured Mastercard<sup>&reg;</sup> is a no annual fee1 credit card that helps you build your credit history when used responsibly.</p>
+                        </div>
+                        <div class="cardInfoBlock flex">
+                            <div class="cardInfoContent">
+                                <div class="cardInfoMainContent">
+                                    Also enjoy free access to your FICO<sup>&reg;</sup> score online once available.
+                                </div>
+                                <h4 class="bold">
+                                    Purchase Rate: 
+                                </h4>
+                                <div class="cardInfoText">
+                                    24.74% variable APR
+                                </div>
+                                <h4 class="cardInfoTitle bold">
+                                    Annual Fee:
+                                </h4>
+                                <div class="cardInfoText">
+                                    No annual fee
+                                </div>
+                            </div>
+                            <div class="cardInfoActionBlock cardInfoDesktop">
+                                <div class="cardInfoActionCtaBlock">
+                                    <button class="btn primary">Learn More &amp; Apply</button>
+                                    <!-- Button and Link Block Ends -->
+                                    <!-- Compare Block -->
+                                    <div class="checkbox compareCheckBox">
+                                        <input type="checkbox" id="listcard2">
+                                        <label for="listcard2">Compare</label>
+                                    </div>
+                                    <!-- Compare Block Ends -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card Listing Block Ends -->
+                <!-- Card Listing Block -->
+                <div class="cardListingItem flex">
+                    <div class="cardImageBlock">
+                        <div class="cardInnerImageBlock">
+                            <div class="cardInfoLabel">
+                                Limited Time Offer
+                            </div>
+                            <img src="./assets/images/citi-premier_222x140.png" alt="Premier Card" title="Premier Card">
+                            <button class="link">Pricing &amp; information</button>
+                        </div>
+                        <div class="cardInfoActionBlock cardInfoTablet">
+                            <div class="cardInfoActionCtaBlock">
+                                <button class="btn primary">Learn More &amp; Apply</button>
+                                <!-- Button and Link Block Ends -->
+                                <!-- Compare Block -->
+                                <div class="checkbox compareCheckBox">
+                                    <input type="checkbox" id="listcard1">
+                                    <label for="listcard1">Compare</label>
+                                </div>
+                                <!-- Compare Block Ends -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cardContentBlock">
+                        <div class="cardDescBlock">
+                            <h3 class="cardDescBlockTitle">Citi Premier <sup>&reg;</sup> Credit Card</h3>
+                            <p class="cardDescBlockDesc">Earn points here, there and everywhere with the Citi Premier<sup>&reg;</sup> Card and discover rich rewards on dining, groceries, travel and more. You'll earn 3X ThankYou<sup>&reg;</sup> Points on restaurants, supermarkets, gas stations, air travel, hotels and 1X ThankYou<sup>&reg;</sup> Point on all other purchases. Plus, enjoy an Annual Hotel Savings Benefit.</p>
+                        </div>
+                        <div class="cardInfoBlock flex">
+                            <div class="cardInfoContent">
+                                <div class="cardInfoMainContent">
+                                    <b>Earn 80,000 bonus points</b> after spending <b>$4,000</b> within the <b>first 3 months</b> of account opening.
+                                </div>
+                                <h4 class="bold">
+                                    Purchase Rate: 
+                                </h4>
+                                <div class="cardInfoText">
+                                    18.24% - 26.24% variable APR, based on your creditworthiness
+                                </div>
+                                <h4 class="cardInfoTitle bold">
+                                    Annual Fee:
+                                </h4>
+                                <div class="cardInfoText">
+                                    $95
+                                </div>
+                            </div>
+                            <div class="cardInfoActionBlock cardInfoDesktop">
+                                <div class="cardInfoActionCtaBlock">
+                                    <button class="btn primary">Learn More &amp; Apply</button>
+                                    <!-- Button and Link Block Ends -->
+                                    <!-- Compare Block -->
+                                    <div class="checkbox compareCheckBox">
+                                        <input type="checkbox" id="listcard2">
+                                        <label for="listcard2">Compare</label>
+                                    </div>
+                                    <!-- Compare Block Ends -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card Listing Block Ends -->
+            </Section>
+            <!-- All Cards Listing Section Ends -->
+        </article>
+        <!-- Main Container Ends -->
+        <!-- Footer -->
+        <footer>
+            <div class="footerListingBlock flex spaceBetween">
+                <div class="footerList">
+                    <h3 class="footerTitle"><a class="footerLink" href="#">Contact Us</a></h3>
+                    <ul>
+                        <li><a class="footerLink" href="tel:1-800-347-4934">Consumer: 1-800-347-4934</a></li>
+                        <li><a class="footerLink" href="tel:711">Consumer TTY: 711</a></li>
+                        <li><a class="footerLink" href="tel:1-866-422-3091">Business: 1-866-422-3091</a></li>
+                        <li><a class="footerLink" href="tel:711">Business TTY:  711</a></li>
+                        <li><a class="footerLink" href="tel:1-800-950-5114">Lost/Stolen: 1-800-950-5114</a></li>
+                        <li><a class="footerLink" href="tel:711">Lost/Stolen TTY: 711</a></li>
+                    </ul>
+                </div>
+                <div class="footerList">
+                    <h3 class="footerTitle"><a class="footerLink" href="#">About Us</a></h3>
+                    <ul>
+                        <li><a class="footerLink" href="#">Locations</a></li>
+                        <li><a class="footerLink" href="#">Careers</a></li>
+                        <li><a class="footerLink" href="#">Site Map</a></li>
+                    </ul>
+                </div>
+                <div class="footerList">
+                    <h3 class="footerTitle"><a class="footerLink" href="#">Terms & Conditions</a></h3>
+                    <ul>
+                        <li><a class="footerLink" href="#">Card Member Agreement</a></li>
+                        <li><a class="footerLink" href="#">Security</a></li>
+                        <li><a class="footerLink" href="#">Privacy</a></li>
+                        <li><a class="footerLink" href="#">Notice At Collection</a></li>
+                        <li><a class="footerLink" href="#">CA Privacy Hub</a></li>
+                        <li><a class="footerLink" href="#">Ad Choices</a></li>
+                    </ul>
+                </div>
+                <div class="footerList socilBlock flex alignCenter">
+                    <ul>
+                        <li><a href="#" class="footerLink sprite facebook">Facebook</a></li>
+                        <li><a href="#" class="footerLink sprite twitter">Twitter</a></li>
+                        <li><a href="#" class="footerLink sprite youtube">YouTube</a></li>
+                    </ul>
+                </div>
             </div>
-        </div>
-        <!-- Card Listing Block Ends -->
-    </Section>
-    <!-- All Cards Listing Section Ends -->
-</article>
-<!-- Main Container Ends -->
+            <div class="copyRightBlock">
+                Copyright<sup>&copy;</sup><span>2022</span> Citigroup Inc
+            </div>
+        </footer>
+        <!-- Footer Ends -->

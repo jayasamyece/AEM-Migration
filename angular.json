@@ -71,8 +71,7 @@
               "browserTarget": "AEM-Migration:build:production"
             },
             "development": {
-              "browserTarget": "AEM-Migration:build:development",
-              "proxyConfig": "src/proxy.conf.json"
+              "browserTarget": "AEM-Migration:build:development"
             }
           },
           "defaultConfiguration": "development"
