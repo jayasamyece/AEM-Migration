@@ -1,0 +1,8 @@
+<section class="featureCreditCardSection containerWidth" *ngIf="creditCards">        
+    <app-header [class]="'featureCardTitle borderBottom'" [text]="creditCards.name"></app-header>
+    <div class="featureCreditCardListBlock flex wFull">
+        <ng-container *ngFor="let item of creditCards.items;let f=first;let l=last"> 
+            <app-feature-credit-card [content]="item" [ngClass]="{'middleBlock': !f && !l}"></app-feature-credit-card>
+        </ng-container>       
+    </div>
+</section>

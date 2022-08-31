@@ -1,0 +1,267 @@
+
+html, body, button, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-family: inherit;
+    vertical-align: baseline;
+    -webkit-tap-highlight-color: transparent;
+    -moz-tap-hightlight-color: transparent;
+    -webkit-font-smoothing: antialiased;
+}
+
+article,
+aside,
+details, /* 1 */
+figcaption,
+figure,
+footer,
+header,
+main, /* 2 */
+menu,
+nav,
+section,
+summary,
+canvas,
+progress { /* 1 */
+    display: block;
+}
+
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+
+template, /* 1 */
+[hidden] {
+    display: none;
+}
+
+*,
+::before,
+::after {
+    background-repeat: no-repeat; /* 1 */
+    box-sizing: inherit; /* 2 */
+}
+
+::before,
+::after {
+    text-decoration: inherit; /* 1 */
+    vertical-align: inherit; /* 2 */
+}
+
+html {
+    box-sizing: border-box; /* 1 */
+    cursor: default; /* 2 */
+    font-family: sans-serif; /* 3 */
+    line-height: 1.5; /* 3 */
+    -ms-text-size-adjust: 100%; /* 4 */
+    -webkit-text-size-adjust: 100%; /* 5 */
+}
+body {
+    margin: 0;
+}
+
+hr {
+    height: 0; /* 1 */
+    overflow: visible; /* 2 */
+}
+
+abbr[title] {
+    border-bottom: 1px dotted; /* 1 */
+    text-decoration: none; /* 2 */
+}
+
+b,
+strong {
+    font-weight: inherit;
+}
+
+b,
+strong {
+    font-weight: bolder;
+}
+
+::-moz-selection {
+    background-color: transparent; /* 1 */
+    text-shadow: none;
+}
+
+::selection {
+    background-color: #b3d4fc; /* 1 */
+    color: #000000; /* 1 */
+    text-shadow: none;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+img {
+    border-style: none;
+}
+
+svg {
+    fill: currentColor;
+}
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+a {
+    background-color: transparent; /* 1 */
+    -webkit-text-decoration-skip: objects; /* 2 */
+    text-decoration: none;
+}
+
+a:focus,
+a:hover {
+        outline-width: 0;
+}
+
+:focus{
+    outline: 0;
+}
+
+button,
+input,
+select,
+textarea {
+    background-color: transparent; /* 1 */
+    border-style: none; /* 1 */
+    color: inherit; /* 1 */
+    font-size: 1em; /* 1 */
+    margin: 0; /* 3 */
+}
+
+button,
+input { /* 1 */
+    overflow: visible;
+}
+
+button,
+select { /* 1 */
+    text-transform: none;
+}
+
+button,
+html [type="button"], /* 1 */
+[type="reset"],
+[type="submit"] {
+    -webkit-appearance: button; /* 2 */
+    cursor: pointer;
+}
+
+::-moz-focus-inner {
+    border-style: none;
+    padding: 0;
+}
+
+:-moz-focusring {
+    outline: none;
+}
+
+textarea {
+    overflow: auto; /* 1 */
+    resize: vertical; /* 2 */
+}
+
+[type="checkbox"],
+[type="radio"] {
+    padding: 0;
+}
+
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+    height: auto;
+}
+
+[type="search"] {
+    -webkit-appearance: textfield; /* 1 */
+    outline-offset: -2px; /* 2 */
+}
+
+::-webkit-search-cancel-button,
+::-webkit-search-decoration, select, input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+::-webkit-input-placeholder {
+    color: inherit;
+    opacity: .54;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+    box-shadow: 0 0 0 30px white inset !important;
+}
+
+@keyframes onAutoFillStart {
+}
+
+@keyframes onAutoFillCancel {
+}
+
+input:-webkit-autofill {
+    animation-name: onAutoFillStart;
+}
+
+input:not(:-webkit-autofill) {
+    animation-name: onAutoFillCancel;
+}
+
+::-webkit-file-upload-button {
+    -webkit-appearance: button; /* 1 */
+    font: inherit; /* 2 */
+}
+
+[aria-busy="true"] {
+    cursor: progress;
+}
+
+[aria-controls] {
+    cursor: pointer;
+}
+
+[aria-disabled] {
+    cursor: default;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+[hidden][aria-hidden="false"] {
+    clip: rect(0, 0, 0, 0);
+    display: inherit;
+    position: absolute;
+}
+
+[hidden][aria-hidden="false"]:focus {
+    clip: auto;
+}
+
+::-ms-clear {
+    display: none;
+}

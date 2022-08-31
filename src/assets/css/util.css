@@ -1,0 +1,250 @@
+
+body {
+    background: #FFF;
+    color: #4a4a4a;
+    font: normal 16px/24px Arial, Helvetica, sans-serif;
+    width: 100%;
+}
+
+.containerWidth {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.wFull {
+    width: 100%;
+}
+
+button {
+    cursor: pointer;
+}
+
+.containerWidth {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.hide {
+    display: none;
+}
+
+.textCenter{
+    text-align: center;
+}
+
+.textRight{
+    text-align: right;
+}
+
+.textLeft{
+    text-align: left;
+}
+
+sup {
+    font-size: 75%!important;
+    position: relative;
+    top: -0.5rem;
+}
+
+.clearfix {
+    display:block;
+}
+
+.clearfix:after {
+    content:'';
+    display:block;
+    height:0;
+    clear:both;
+    visibility:hidden;
+}
+
+.floatRight {
+    float: right;
+}
+
+.floatLeft {
+    float: left;
+}
+
+.inlineBlock{
+    display: inline-block;
+}
+
+.inline{
+    display: inline;
+}
+
+.none{
+    display: none;
+}
+
+.block{
+    display: block;
+}
+
+.flex {
+    display: flex;
+}
+
+.alignTop {
+    vertical-align: top;
+}
+
+.alignMiddle {
+    vertical-align: middle;
+}
+
+.alignBottom {
+    vertical-align: bottom;
+}
+
+.contentStart {
+    justify-content: flex-start;
+}
+
+.contentMiddle {
+    justify-content: center;
+}
+
+.contentEnd {
+    justify-content: flex-end;
+}
+
+.spaceBetween {
+    justify-content: space-between;
+}
+
+.alignCenter {
+    align-items: center;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.relative{
+    position: relative;
+}
+
+.absolite{
+    position: absolute;
+}
+
+.hiddenOverflow {
+    overflow: hidden;
+}
+
+/* Button */
+.btn {
+    line-height: 46px;
+    border-width: 2px;
+    border-style: solid;
+    min-width: 220px;
+    position: relative;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 6px;
+}
+
+.primary {
+    color: #fff;
+    border-color: #056dae;
+    background: #056dae;
+}
+
+.primary:hover,
+.primary:active {
+    background-color: #002a54;
+    border-color: #002a54;
+}
+
+.primary:focus {
+    outline: dotted thin;
+    outline: -webkit-focus-ring-color auto 5px;
+    outline-offset: -2px;
+}
+
+.secondary {
+    border: 1px solid #FFF;
+    padding: 12px;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.secondary:hover {
+    background: #002a54;
+}
+
+.secondary:active,
+.secondary.selected {
+    background: #FFF;
+    color: #056dae;
+}
+/* Checkbox */
+
+  .compareCheckBox {
+    display: block;
+    font-size: 14px;
+    margin-top: 8px;
+    margin-bottom: 16px;
+  }
+  
+  .compareCheckBox input {
+    padding: 0;
+    height: initial;
+    width: initial;
+    margin-bottom: 0;
+    display: none;
+    cursor: pointer;
+  }
+  
+  .compareCheckBox label {
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .compareCheckBox label:before {
+    content:'';
+    -webkit-appearance: none;
+    background-color: transparent;
+    border: 1px solid #4a4a4a;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+    padding: 8px;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    cursor: pointer;
+    margin-right: 12px;
+    border-radius: 6px;
+  }
+
+  .compareCheckBox input:checked + label:before {
+    background: #0079bf;
+    border-color: #0079bf;
+  }
+  
+  .compareCheckBox input:checked + label:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 3px;
+    left: 6px;
+    width: 6px;
+    height: 10px;
+    border: solid #FFF;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
+/* Checkbox Ends */

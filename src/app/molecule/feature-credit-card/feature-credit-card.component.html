@@ -1,0 +1,23 @@
+<div class="featureCreditCardListItem textCenter">
+    <!-- Credit Card Info -->
+    <app-header [header]="'h3'" [class]="'featureCardInnerTitle my-2'" [text]="content.title"></app-header>
+    <app-header [header]="'h4'" [class]="'featureCardInnerDesc my-2'" [text]="content.description"></app-header>
+    <!-- Credit Card Info Ends -->
+    <!-- Credit Card Image Block -->
+    <app-image [class]="'creditCardImage block textCenter'" [src]="content.imageUrl" [alt]="content.description"></app-image>
+    <!-- Credit Card Image Block Ends -->
+    <!-- Button and Link Block -->
+    <div *ngFor="let link of content.links" class="linkButtons">
+        <app-button [class]="'btn primary'">
+            <app-hyperlink [text]="link.title" [class]="'text-white'" [target]="link.showInNewTab===true?'_blank':'_self'"></app-hyperlink>
+        </app-button>
+    </div>    
+    <app-button [class]="'link'" [text]="'Pricing &amp; information'"></app-button>
+
+    <!-- Button and Link Block Ends -->
+    <!-- Compare Block -->
+    <div class="checkbox compareCheckBox">
+        <app-checkbox [id]="'card1'" [label]="'Add To Compare'"></app-checkbox>
+    </div>
+    <!-- Compare Block Ends -->
+</div>

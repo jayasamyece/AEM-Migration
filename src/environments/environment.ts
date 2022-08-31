@@ -3,6 +3,8 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
+  apphost:'http://localhost:4200/',
+  creditCardEndPoint:'assets/citi-featured-card-list.json',
   production: false
 };
 

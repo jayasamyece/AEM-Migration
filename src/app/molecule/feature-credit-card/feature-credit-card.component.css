@@ -1,0 +1,6 @@
+.linkButtons{
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+    padding: 5px;
+}
