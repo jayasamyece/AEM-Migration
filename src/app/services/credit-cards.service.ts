@@ -12,7 +12,12 @@ export class CreditCardsService {
 
   getCreditCards(): Observable<any>{
     return this._http.get(environment.creditCardEndPoint).pipe(
-      tap(t=>{console.log('API Data',t )})
+      tap(t=>{console.log('API Data-Main content',t )})
+    );
+  }
+  getCreditCardContent(url: string): Observable<any>{
+    return this._http.get(url).pipe(
+      tap(t=>{console.log('API Data-content2',t )})
     );
   }
 }

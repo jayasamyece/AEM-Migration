@@ -4,5 +4,17 @@
       "secure": false,
       "pathRewrite": {"/api/v1":"http://localhost:4200/assets"},
       "changeOrigin":true
+    },    
+    "/content/dam/citibank/fragments/sections/cards/*": {
+      "target": "http://localhost:4200",
+      "secure": false,
+      "pathRewrite": {"/content/dam/citibank/fragments/sections/cards":"http://localhost:4200/assets"},
+      "changeOrigin":true
+    },    
+    "/content/dam/citibank/fragments/links/*": {
+      "target": "http://localhost:4200",
+      "secure": false,
+      "pathRewrite": {"/content/dam/citibank/fragments/links":"http://localhost:4200/assets"},
+      "changeOrigin":true
     }
   }

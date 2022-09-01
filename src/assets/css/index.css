@@ -438,6 +438,7 @@ footer {
     .featureCreditCardListBlock, .cardListingItem {
         width: 100%;
         flex-wrap: wrap;
+        justify-content: center;
     }
 
     .middleBlock {

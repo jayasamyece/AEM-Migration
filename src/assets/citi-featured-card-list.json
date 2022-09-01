@@ -52,6 +52,23 @@
           "showInNewTab": true
         }
       ]
+    },
+    {
+      "title": "Citi Custom Cash<sup>SM</sup> Card",
+      "description": "Earn <b>$200 cash back</b>  after qualifying purchases",
+      "imageUrl": "https://www.cdn.citibank.com/v1/augcb/cbol/files/images/2021/all-cards_premier.png",
+      "links": [
+        {
+          "title": "Apply Now",
+          "url": "https://www.citibank.com.au/acquisition/AUGCB/index.html#accope?pcode=MC231&scode=TWN6ZY41",
+          "showInNewTab": false
+        },
+        {
+          "title": "Learn More",
+          "url": "https://www1.citibank.com.au/credit-cards/citi-clear-balance-transfer",
+          "showInNewTab": true
+        }
+      ]
     }
   ]
 }

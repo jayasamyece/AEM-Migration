@@ -1,0 +1,242 @@
+{
+    "id": "page-d7be52a5df",
+    "designPath": "/libs/settings/wcm/designs/default",
+    "title": "CITI Rewards",
+    "brandSlug": "",
+    "lastModifiedDate": 1661981797664,
+    "templateName": "page-content",
+    "htmlPageItems": [],
+    "cssClassNames": "page basicpage",
+    "language": "en",
+    ":items": {
+        "root": {
+            "columnClassNames": {
+                "container": "aem-GridColumn aem-GridColumn--default--12"
+            },
+            "gridClassNames": "aem-Grid aem-Grid--12 aem-Grid--default--12",
+            "columnCount": 12,
+            "allowedComponents": {
+                "components": [
+                    {
+                        "path": "/content/citibank/us/en/citi-rewards/jcr:content/root/citibank/components/accordion",
+                        "title": "Accordion"
+                    },
+                    {
+                        "path": "/content/citibank/us/en/citi-rewards/jcr:content/root/citibank/components/breadcrumb",
+                        "title": "Breadcrumb"
+                    },
+                    {
+                        "path": "/content/citibank/us/en/citi-rewards/jcr:content/root/citibank/components/button",
+                        "title": "Button"
+                    },
+                    {
+                        "path": "/content/citibank/us/en/citi-rewards/jcr:content/root/citibank/components/carousel",
+                        "title": "Carousel"
+                    },
+                    {
+                        "path": "/content/citibank/us/en/citi-rewards/jcr:content/root/citibank/components/container",
+                        "title": "Container"
+                    },
+                    {
+                        "path": "/content/citibank/us/en/citi-rewards/jcr:content/root/citibank/components/contentfragment",
+                        "title": "Content Fragment"
+                    },
+                    {
+                        "path": "/content/citibank/us/en/citi-rewards/jcr:content/root/citibank/components/contentfragmentlist",
+                        "title": "Content Fragment List"
+                    },
+                    {
+                        "path": "/content/citibank/us/en/citi-rewards/jcr:content/root/citibank/components/download",
+                        "title": "Download"
+                    },
+                    {
+                        "path": "/content/citibank/us/en/citi-rewards/jcr:content/root/citibank/components/embed",
+                        "title": "Embed"
+                    },
+                    {
+                        "path": "/content/citibank/us/en/citi-rewards/jcr:content/root/citibank/components/experiencefragment",
+                        "title": "Experience Fragment"
+                    },
+                    {
+                        "path": "/content/citibank/us/en/citi-rewards/jcr:content/root/citibank/components/helloworld",
+                        "title": "Hello World Component"
+                    },
+                    {
+                        "path": "/content/citibank/us/en/citi-rewards/jcr:content/root/citibank/components/image",
+                        "title": "Image"
+                    },
+                    {
+                        "path": "/content/citibank/us/en/citi-rewards/jcr:content/root/citibank/components/list",
+                        "title": "List"
+                    },
+                    {
+                        "path": "/content/citibank/us/en/citi-rewards/jcr:content/root/citibank/components/pdfviewer",
+                        "title": "PDF Viewer"
+                    },
+                    {
+                        "path": "/content/citibank/us/en/citi-rewards/jcr:content/root/citibank/components/progressbar",
+                        "title": "Progress Bar"
+                    },
+                    {
+                        "path": "/content/citibank/us/en/citi-rewards/jcr:content/root/citibank/components/separator",
+                        "title": "Separator"
+                    },
+                    {
+                        "path": "/content/citibank/us/en/citi-rewards/jcr:content/root/citibank/components/tabs",
+                        "title": "Tabs"
+                    },
+                    {
+                        "path": "/content/citibank/us/en/citi-rewards/jcr:content/root/citibank/components/teaser",
+                        "title": "Teaser"
+                    },
+                    {
+                        "path": "/content/citibank/us/en/citi-rewards/jcr:content/root/citibank/components/text",
+                        "title": "Text"
+                    },
+                    {
+                        "path": "/content/citibank/us/en/citi-rewards/jcr:content/root/citibank/components/title",
+                        "title": "Title"
+                    },
+                    {
+                        "path": "/content/citibank/us/en/citi-rewards/jcr:content/root/citibank/components/form/container",
+                        "title": "Core Form Container"
+                    },
+                    {
+                        "path": "/content/citibank/us/en/citi-rewards/jcr:content/root/citibank/components/languagenavigation",
+                        "title": "Language Navigation"
+                    },
+                    {
+                        "path": "/content/citibank/us/en/citi-rewards/jcr:content/root/citibank/components/navigation",
+                        "title": "Navigation"
+                    },
+                    {
+                        "path": "/content/citibank/us/en/citi-rewards/jcr:content/root/citibank/components/search",
+                        "title": "Quick Search"
+                    }
+                ],
+                "applicable": false
+            },
+            ":items": {
+                "container": {
+                    "columnClassNames": {
+                        "container": "aem-GridColumn aem-GridColumn--default--12"
+                    },
+                    "gridClassNames": "aem-Grid aem-Grid--12 aem-Grid--default--12",
+                    "columnCount": 12,
+                    "allowedComponents": {
+                        "components": [],
+                        "applicable": false
+                    },
+                    ":items": {
+                        "container": {
+                            "columnClassNames": {
+                                "contentfragment": "aem-GridColumn aem-GridColumn--default--12"
+                            },
+                            "gridClassNames": "aem-Grid aem-Grid--12 aem-Grid--default--12",
+                            "columnCount": 12,
+                            "allowedComponents": {
+                                "components": [
+                                    {
+                                        "path": "/content/citibank/us/en/citi-rewards/jcr:content/root/container/container/citibank/components/contentfragment",
+                                        "title": "Content Fragment"
+                                    }
+                                ],
+                                "applicable": false
+                            },
+                            ":items": {
+                                "contentfragment": {
+                                    "id": "contentfragment-a344ebd276",
+                                    "description": "",
+                                    "title": "Credit-Card-Section",
+                                    ":items": {},
+                                    ":itemsOrder": [],
+                                    "elements": {
+                                        "title": {
+                                            "value": "\u003Ch1\u003E\u003Cb\u003EFeatured Cards\u003C/b\u003E\u003C/h1\u003E\n",
+                                            "dataType": "string",
+                                            "title": "Title",
+                                            ":type": "text/html",
+                                            "multiValue": false
+                                        },
+                                        "type": {
+                                            "value": "cards",
+                                            "dataType": "string",
+                                            "title": "Type",
+                                            ":type": "string",
+                                            "multiValue": false
+                                        },
+                                        "items": {
+                                            "value": [
+                                                "/content/dam/citibank/fragments/sections/cards/citi-clear-rewards",
+                                                "/content/dam/citibank/fragments/sections/cards/citi-rewards-card"
+                                            ],
+                                            "dataType": "content-fragment",
+                                            "title": "items",
+                                            ":type": "content-fragment",
+                                            "multiValue": true
+                                        }
+                                    },
+                                    "elementsOrder": [
+                                        "title",
+                                        "type",
+                                        "items"
+                                    ],
+                                    "model": "citibank/models/page-section",
+                                    ":type": "citibank/components/contentfragment",
+                                    "dataLayer": {
+                                        "contentfragment-a344ebd276": {
+                                            "@type": "citibank/components/contentfragment",
+                                            "repo:modifyDate": "2022-08-31T21:36:37Z",
+                                            "dc:title": "Credit-Card-Section",
+                                            "elements": [
+                                                {
+                                                    "xdm:title": "Title",
+                                                    "xdm:text": "\u003Ch1\u003E\u003Cb\u003EFeatured Cards\u003C/b\u003E\u003C/h1\u003E\n"
+                                                },
+                                                {
+                                                    "xdm:title": "Type",
+                                                    "xdm:text": "cards"
+                                                },
+                                                {
+                                                    "xdm:title": "items",
+                                                    "xdm:text": null
+                                                }
+                                            ]
+                                        }
+                                    }
+                                }
+                            },
+                            ":itemsOrder": [
+                                "contentfragment"
+                            ],
+                            ":type": "citibank/components/container"
+                        }
+                    },
+                    ":itemsOrder": [
+                        "container"
+                    ],
+                    ":type": "citibank/components/container"
+                }
+            },
+            ":itemsOrder": [
+                "container"
+            ],
+            ":type": "citibank/components/container"
+        }
+    },
+    ":itemsOrder": [
+        "root"
+    ],
+    ":type": "citibank/components/page",
+    "dataLayer": {
+        "page-d7be52a5df": {
+            "@type": "citibank/components/page",
+            "repo:modifyDate": "2022-08-31T21:35:56Z",
+            "dc:title": "CITI Rewards",
+            "xdm:template": "/conf/citibank/settings/wcm/templates/page-content",
+            "xdm:language": "en",
+            "xdm:tags": [],
+            "repo:path": "/content/citibank/us/en/citi-rewards.html"
+        }
+    }
+}

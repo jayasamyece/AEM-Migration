@@ -1,0 +1,100 @@
+{
+    "links": [
+        {
+            "rel": [
+                "self"
+            ],
+            "href": "http://localhost:4502/api/assets/citibank/fragments/sections/cards/citi-rewards-card.json"
+        },
+        {
+            "rel": [
+                "parent"
+            ],
+            "href": "http://localhost:4502/api/assets/citibank/fragments/sections/cards.json"
+        }
+    ],
+    "class": [
+        "assets/asset"
+    ],
+    "actions": [
+        {
+            "method": "DELETE",
+            "name": "delete",
+            "href": "http://localhost:4502/api/assets/citibank/fragments/sections/cards/citi-rewards-card",
+            "title": "Delete"
+        },
+        {
+            "method": "PUT",
+            "name": "update-fragment",
+            "href": "http://localhost:4502/api/assets/citibank/fragments/sections/cards/citi-rewards-card",
+            "type": "application/json",
+            "title": "Update Content Fragment"
+        }
+    ],
+    "properties": {
+        "metadata": {},
+        "created": 1661981474485,
+        "description": "",
+        "title": " Citi-Rewards-Card",
+        "contentFragment": true,
+        "createdBy": "admin",
+        "elementsOrder": [
+            "title",
+            "description",
+            "url",
+            "links"
+        ],
+        "elements": {
+            "description": {
+                "variationsOrder": [],
+                ":type": "text/html",
+                "variations": {},
+                "dataType": "string",
+                "title": "Description",
+                "multiValue": false,
+                "value": "<p><b>0% p.a. for 14 months on Purchases and Balance Transfers<sup>2<\/sup><\/b><br>\nBalance transfer reverts to cash advance rate.<\/p>\n"
+            },
+            "links": {
+                "variationsOrder": [],
+                ":type": "content-fragment",
+                "variations": {},
+                "dataType": "content-fragment",
+                "title": "Links",
+                "multiValue": true,
+                "value": [
+                    "/content/dam/citibank/fragments/links/citi-rewards-card-apply-now",
+                    "/content/dam/citibank/fragments/links/citi-rewards-learn-more"
+                ]
+            },
+            "title": {
+                "variationsOrder": [],
+                ":type": "text/html",
+                "variations": {},
+                "dataType": "string",
+                "title": "Title",
+                "multiValue": false,
+                "value": "<h1>Citi Rewards Card<\/h1>\n"
+            },
+            "url": {
+                "variationsOrder": [],
+                ":type": "string",
+                "variations": {},
+                "dataType": "string",
+                "title": "Image URL",
+                "multiValue": false,
+                "value": "/content/dam/citibank/all-cards_rewards.png"
+            }
+        },
+        "name": "citi-rewards-card",
+        "modified": 1661981622477,
+        "modifiedBy": "admin",
+        "cq:model": {
+            "path": "/conf/citibank/settings/dam/cfm/models/product-summary"
+        },
+        "srn:paging": {
+            "total": 0,
+            "offset": 0,
+            "limit": 20
+        }
+    }
+}

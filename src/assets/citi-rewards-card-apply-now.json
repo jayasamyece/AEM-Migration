@@ -1,0 +1,87 @@
+{
+    "links": [
+        {
+            "rel": [
+                "self"
+            ],
+            "href": "http://localhost:4502/api/assets/citibank/fragments/citi-rewards-card-apply-now.json"
+        },
+        {
+            "rel": [
+                "parent"
+            ],
+            "href": "http://localhost:4502/api/assets/citibank/fragments.json"
+        }
+    ],
+    "class": [
+        "assets/asset"
+    ],
+    "actions": [
+        {
+            "method": "DELETE",
+            "name": "delete",
+            "href": "http://localhost:4502/api/assets/citibank/fragments/citi-rewards-card-apply-now",
+            "title": "Delete"
+        },
+        {
+            "method": "PUT",
+            "name": "update-fragment",
+            "href": "http://localhost:4502/api/assets/citibank/fragments/citi-rewards-card-apply-now",
+            "type": "application/json",
+            "title": "Update Content Fragment"
+        }
+    ],
+    "properties": {
+        "metadata": {},
+        "created": 1661969538666,
+        "description": "",
+        "title": "Citi-Rewards-Card-Apply-Now",
+        "contentFragment": true,
+        "createdBy": "admin",
+        "elementsOrder": [
+            "title",
+            "url",
+            "showInNewTab"
+        ],
+        "elements": {
+            "showInNewTab": {
+                "variationsOrder": [],
+                ":type": "boolean",
+                "variations": {},
+                "dataType": "boolean",
+                "title": "Show In New Tab",
+                "multiValue": false,
+                "value": false
+            },
+            "title": {
+                "variationsOrder": [],
+                ":type": "string",
+                "variations": {},
+                "dataType": "string",
+                "title": "Link Text",
+                "multiValue": false,
+                "value": "Apply Now"
+            },
+            "url": {
+                "variationsOrder": [],
+                ":type": "string",
+                "variations": {},
+                "dataType": "string",
+                "title": "URL",
+                "multiValue": false,
+                "value": "https://www.citibank.com.au/acquisition/AUGCB/index.html#accope?pcode=MC302&scode=PWN6ZY71"
+            }
+        },
+        "name": "citi-rewards-card-apply-now",
+        "modified": 1661969552768,
+        "modifiedBy": "admin",
+        "cq:model": {
+            "path": "/conf/citibank/settings/dam/cfm/models/link-model"
+        },
+        "srn:paging": {
+            "total": 0,
+            "offset": 0,
+            "limit": 20
+        }
+    }
+}
